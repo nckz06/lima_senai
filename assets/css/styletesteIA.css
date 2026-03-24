@@ -1,0 +1,52 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.main-header {
+    background-color: #004a8e; /* Azul SENAI */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky; /* O header fica preso no topo ao rolar */
+    top: 0;
+    z-index: 100;
+}
+
+.container-blocos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas iguais */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coluna-bloco {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsividade: No celular, as 3 colunas viram 1 só */
+@media (max-width: 768px) {
+    .container-blocos {
+        grid-template-columns: 1fr;
+    }
+}
+.noticia {
+    background: #fff;
+    border-top: 4px solid #004a8e; /* Linha azul no topo como na USP */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s; /* Para o efeito de animação */
+}
+
+.noticia:hover {
+    transform: translateY(-5px); /* O card "sobe" ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.noticia h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; /* Caixa alta igual à manchete da Super */
+    color: #333;
+}
