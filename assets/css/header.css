@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1.25rem;
+    background-color: #e30613;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+
+        
+        a {
+            color: #FFF;
+            font-size: 1.25rem;
+            
+            &:hover {
+                text-decoration: underline #fff;
+            }
+        }
+
+        li:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    .logo {
+        max-width: 150px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: .5rem .75rem;
+        margin-right: .5rem;
+        border: 2px solid #fff;
+        border-radius: .5rem;
+        cursor: pointer;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    button#cadastro {
+        background-color: transparent;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            border-color: #9a1915;
+            color: #9a1915;
+        }
+    }
+    
+    button#login {
+        background-color: #FFF;
+        color: #000;
+        
+        &:hover {
+            background-color: #9a1915;
+            border-color: #9a1915;
+            color: #fff;
+        }
+    }
+}
