@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <!--Cabeçalho-->
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-        <meta name="description" content="Contatos da equipe de desenvolvimento da revista 'Inova SENAI', juntamente de um formulário de resposta para melhorias."/>
+<head>
+    <!--Cabeçalho-->
 
-        <title>Contatos e Melhorias</title>
-        <link rel="icon" type="image/png" href="./assets/img/SENAI_São_Paulo_logo.png" sizes="32x32">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    
-    </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta name="description"
+        content="Contatos da equipe de desenvolvimento da revista 'Inova SENAI', juntamente de um formulário de resposta para melhorias." />
+    <title>Contatos e Melhorias</title>
+    <link rel="icon" type="image/png" href="" sizes="32x32">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <body>
+</head>
 
-        <h1>Teste</h1>
+<body>
+    <main>
+        <section>
+            
+        </section>
 
-        <footer>
-            <div class="footer_content" id="footer_logo">
-                <a href="https://www.sp.senai.br/">
-                    <img src="./assets/img/SENAI_São_Paulo_logo.png" alt="Conheça o SENAI!"> 
-                    <figcaption>Site do SENAI SP</figcaption>  
-                </a>
+        <section class="form_feedback">
+            <form action="./contatos.html" method="post">
 
-            </div>
+                <!-- Nome do Usuário -->
+                <fieldset>
+                    <label for="p_nome" class="lbl_feedback">Primeiro Nome:</label>
+                    <input type="text" id="p_nome" name="p_nome" placeholder="João" class="sobre_usr" required>
+                    <label for="u_nome" class="lbl_feedback">Último Nome:</label>
+                    <input type="text" id="u_nome" name="u_nome" placeholder="da Silva" class="sobre_usr" required>
 
-            <div class="footer_content" id="o_projeto">
-            </div>
+                </fieldset>
 
-            <div class="footer_content" id="contatos">
-            </div>
+                <!-- Email do Usuário -->
+                <fieldset>
+                    <label for="email" class="lbl_feedback">Digite seu melhor e-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="usuario@email.com"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="email" class="email_usr"
+                        required>
+                </fieldset>
 
-            <div class="footer_content" id="sobre_nos">
+                <!-- Telefone do Usuário -->
+                <fieldset>
+                    <label for="cod_pais" class="lbl_feedback">Seu Telefone:</label>
+                    <input type="number" id="cod_pais" name="cod_pais" value="55" class="telefone_usr">
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00)00000-0000"
+                        pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" class="telefone_usr" required>
+                </fieldset>
 
-            </div>
-        </footer>
-    </body>
+
+                <!-- Mensagem do Usuário -->
+                <fieldset>
+                    <label for="msg_melhoria" class="lbl_feedback">Como podemos te ajudar?</label>
+                    <textarea name="msg_melhoria" id="msg_melhoria" rows="5" cols="50" class="msg_usr"
+                        required></textarea>
+                </fieldset>
+
+
+                <!-- Botão de Enviar -->
+                <input type="submit" id="submit" name="submit" class="submit_usr">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
 
 </html>
