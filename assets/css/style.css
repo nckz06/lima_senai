@@ -1,4 +1,8 @@
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./about.css')
+@import url('./about.css');
+@import url('./contatos.css');
 
+body{
+    background-color: gray;
+}

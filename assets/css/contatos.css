@@ -1,0 +1,32 @@
+.form_feedback{
+    background-color: #e30613;
+    justify-content: center;
+    color: white;
+    display: flexbox;
+    max-width: 40vw;
+    border-radius: 10px;
+}
+
+.form_feedback h1{
+    text-align: center;
+    font-weight: 600;
+}
+
+.form_feedback fieldset{
+    border: none;
+}
+
+.sobre_usr {
+    display: flexbox;
+    columns: 0;
+}
+
+.email_usr{
+    width: 100%;
+}
+
+.lbl_feedback{
+    font-weight: bold;
+}
+
+
