@@ -195,3 +195,33 @@
     padding: 10px 20px;
     gap: 20px; /* Espaço entre a logo e o título */
 }
+
+/* Container que agora foca em um bloco só */
+.container-noticias-unicas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bloco-header {
+    text-align: left;
+    margin-bottom: 30px;
+    border-left: 5px solid #eb0202;
+    padding-left: 15px;
+}
+
+/* Aqui as notícias ficam em grade dentro do mesmo bloco */
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo automático! */
+    gap: 30px;
+}
+
+/* Ajuste na imagem da notícia para não ficar gigante */
+.noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Corta a imagem sem distorcer */
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
