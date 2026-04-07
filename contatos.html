@@ -10,26 +10,66 @@
         content="Contatos da equipe de desenvolvimento da revista 'Inova SENAI', juntamente de um formulário de resposta para melhorias." />
     <title>Contatos e Melhorias</title>
     <link rel="icon" type="image/png" href="" sizes="32x32">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
 
 </head>
 
 <body>
     <main>
-        <section>
-            
+
+        <section class="melhorias_recentes">
+            <div class="conteudo_melhorias">
+                <h1>Melhorias Recentes</h1>
+                <p>Última melhoria: Adicionamos ao site um menu de navegação, facilitando aos usuários a mudança de páginas!</p>
+                <p>Caso tenha alguma sugestão de melhorias, nos envie um e-mail ou responda o formulário.</p>
+            </div>
+        </section>
+
+        <section class="entre_em_contato">
+
+            <div class="contato_content">
+                <div class="legenda_contato">
+                <h1>Entre em Contato!</h1>
+                <p>Nos mande um e-mail, ligue para nosso número de contato, ou preencha o formulário para que sua mensagem seja ouvida.</p>
+
+                <address class="contatos_equipe">
+                    <a href="mailto:email@senai.br" title="E-mail oficial para contato">email@senai.br</a>
+                    <br>
+                    <a href="tel:+5500000000000" title="Telefone oficial para contato">(11) 12345-6789</a>
+                </address>
+                </div>
+
+                <div class="legenda_explicacao">
+                    <div class="suporte_ao_cliente">
+                        <h3>Por que essa página existe?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ratione asperiores eaque expedita, error dignissimos, quod non dicta molestias quisquam ut corrupti iusto velit tempora fuga assumenda dolorem nesciunt autem.</p>
+                    </div>
+
+                    <div class="feedback_e_sugestoes">
+                        <h3>Feedback e Sugestões</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque animi sequi, ut iste fuga similique inventore, magni cum quo ab in veniam minima, expedita non molestias eos maiores. Iusto.</p>
+                    </div>
+                    
+                    <div class="retirada_de_conteudo">
+                        <h3>Quer que removamos algo?</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur vitae reiciendis laudantium? Tenetur, unde ipsa quaerat, laboriosam nam corrupti illo explicabo soluta dignissimos nihil eos ducimus! Officia, voluptatum id.</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <section class="form_feedback">
-            <form action="./contatos.html" method="post">
+            <form action="./contatos.html" method="POST">
+
+                <h1>Fale Conosco!</h1>
 
                 <!-- Nome do Usuário -->
                 <fieldset>
                     <label for="p_nome" class="lbl_feedback">Primeiro Nome:</label>
-                    <input type="text" id="p_nome" name="p_nome" placeholder="João" class="sobre_usr" required>
+                    <input type="text" id="p_nome" name="p_nome" placeholder="Nome" class="sobre_usr" required>
                     <label for="u_nome" class="lbl_feedback">Último Nome:</label>
-                    <input type="text" id="u_nome" name="u_nome" placeholder="da Silva" class="sobre_usr" required>
-
+                    <input type="text" id="u_nome" name="u_nome" placeholder="Sobrenome" class="sobre_usr" required>
                 </fieldset>
 
                 <!-- Email do Usuário -->
@@ -45,7 +85,7 @@
                     <label for="cod_pais" class="lbl_feedback">Seu Telefone:</label>
                     <input type="number" id="cod_pais" name="cod_pais" value="55" class="telefone_usr">
                     <input type="tel" id="telefone" name="telefone" placeholder="(00)00000-0000"
-                        pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" class="telefone_usr" required>
+                        pattern="([0-9]{2}\)[0-9]{5}-[0-9]{4}" class="telefone_usr" required>
                 </fieldset>
 
 
