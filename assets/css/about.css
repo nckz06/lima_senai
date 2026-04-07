@@ -1,0 +1,80 @@
+main {
+    padding-top: 6rem;
+}
+
+.about {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 500px 1fr;
+    padding: 1rem;
+
+    .about-senai {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        ". sobre"
+        "senai .";
+
+        h2 {
+            position: relative;
+            top: 5%;
+            right: 15%;
+            grid-area: sobre;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: #9a1915;
+            color: #fff;
+            z-index: -1;
+        }
+    
+        img {
+            position: relative;
+            bottom: 25%;
+            left: 25%;
+            grid-area: senai;
+            max-width: 100%;
+            border-radius: 100%;
+            z-index: -2;
+        }
+    }
+
+    .about-content {
+        background-color: #e30613;
+        padding: 1.5rem;
+        border-radius: .5rem;
+
+        small, h3, p {
+            color: #fff;
+            margin-bottom: .75rem;
+        }
+    }
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .team-member {
+
+        .team-name {
+            position: absolute;
+            padding: .25rem;
+            color: #fff;
+            background-color: #9a1915;
+            border-right: 10px solid #e30613;
+        }
+    
+        .team-photo {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+    }
+}
