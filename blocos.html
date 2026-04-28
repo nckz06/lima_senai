@@ -4,26 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Blocos SENAI Santos Dumont</title>
-    <link rel="stylesheet" href=assets\css\styletesteIA.css>
+    <!--<link rel="stylesheet" href=assets\css\style.css> -->
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="menu-container">
-        <button class="menu-button" aria-label="Abrir Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-    <div class="logo-box">
-        <img src=assets\img\logo-senai.png alt="Logo SENAI">
-    </div>
 
-    <div class="header-logo">
-        <h1>Conexão Santos Dumont</h1>
-    </div>
-    </header>
+    <!-- Header correto -->
+ <header>
+        <div>
+            <a href="./index.html">
+                <img class="logo" src="./assets/img/logo_senai_branca.png" alt="logo do SENAI" title="logo do SENAI">
+            </a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="./index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="">Bloco 1</a>
+                </li>
+                <li>
+                    <a href="">Bloco 2 - A</a>
+                </li>
+                <li>
+                    <a href="">Bloco 2 - B</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button class="btn" id="cadastro">Cadastrar</button>
+            <button class="btn" id="login">Entrar</button>
+        </div>
+    </header> 
+
 <section class="intro-projeto">
     <div class="categoria-label">Unidade Santos Dumont</div>
     <h2>Explorando nossos Blocos</h2>
@@ -34,36 +48,7 @@
     </p>
     <hr class="linha-divisora">
 </section>
-
-    <!-- <main class="container-blocos">
-        
-        <section class="coluna-bloco" id="bloco-a">
-            <h2>Bloco A</h2>
-            <article class="noticia">
-                <img src="img/bloco-a-1.jpg" alt="Oficina">
-                <h3>Inovação na Mecânica</h3>
-                <p>O corpo do artigo entra aqui...</p>
-                <a href="#">Leia mais</a>
-            </article>
-        </section>
-
-        <section class="coluna-bloco" id="bloco-b">
-            <h2>Bloco B</h2>
-            <article class="noticia">
-                <h3>Novidades da Eletrônica</h3>
-                <p>Informações sobre os laboratórios...</p>
-            </article>
-        </section>
-
-        <section class="coluna-bloco" id="bloco-c">
-            <h2>Bloco C</h2>
-            <article class="noticia">
-                <h3>Informática e Gestão</h3>
-                <p>O dia a dia dos cursos de TI...</p>
-            </article>
-        </section>
-
-    </main> -->
+    
 
     <main class="container-noticias-unicas">
     <div class="bloco-header">
@@ -97,26 +82,51 @@
     </div>
 </main>
 
-    <footer class="site-footer">
-    <div class="footer-content">
-        <div class="footer-section about">
-            <h3>Sobre Nós</h3>
-            <p>O projeto <strong>Conexão Santos Dumont</strong> é uma iniciativa laboratorial dos alunos do SENAI para modernizar a comunicação interna e explorar tecnologias web.</p>
+    <footer>
+        <!-- Teste de Footer -->
+        <div class="footer_content" id="conteudo_footer">
+            <!-- Logo -->
+            <div class="logo" id="footer_logo">
+                <a href="https://www.sp.senai.br/unidade/saojosedoscampos/" target="_blank">
+                        <img src="./assets/img/logo_senai_nova.png" alt="Voltar ao Começo">
+                </a>
+            </div>
+            <!-- EXplicação -->
+            <div class="footer_explicacao" id="explicacao">
+                <div class="footer_explicacao_area" id="oq_e_revista">
+                    <h3>O que é esta Revista?</h3>
+                <p>Esta revista é um projeto para as aulas de
+                    <dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>, da turma do curso de <dfn><abbr title="Desenvolvimento de Sistemas">Dev</abbr></dfn> da General Motors. Foi criada para servir como uma <i>Revista Digital</i> do <i>SENAI #302 - Santos Dumont</i>, com o pretexto de informar os leitores sobre notícias da unidade, com tópicos como Notícias da Semana, Notícias Destaque entre outros.
+                </p>
+                </div>
+                <div class="footer_explicacao_area" id="lorem">
+                    <h3>
+                    Lorem ipsum?
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolore ut consectetur expedita ex nulla ab architecto tempore nihil, quas sapiente officia alias ducimus nostrum maxime amet incidunt eum? Aperiam?</p>
+                </div>
+            </div>
+            <!-- Quem Somos?? -->
+            <div class="footer_sobre_nos" id="sobre_nos">
+                <div class="footer_sobre_nos_area" id="quem_somos">
+                    <h3>Quem somos nós?</h3>
+                    <p>Somos um grupo de desenvolvedores de sistemas da <dfn><abbr title="General Motors">GM</abbr></dfn>. Dentre nossas matérias, temos desenvolvimento Front-End, que é a contrução de sites completos. No momento, estamos passando pelas matérias "<dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>" e "Estilização de Páginas".</p> 
+                </div>              
+                <div class="footer_sobre_nos_area" id="contatos">
+                    <h3>Contatos</h3></a>
+                    <address>
+                        <a href="https://www.instagram.com/senaisjc/" target="_blank"><img id="img_insta" src="./assets/img/icons/instagram.svg" alt="Rede Social Principal do SENAI"></a>
+                        <a href="https://www.linkedin.com/company/senai-nacional/?originalSubdomain=br" target="_blank"><img id="img_linkedin" src="./assets/img/icons/linkedin.svg" alt="Linkedin do SENAI"></a>
+                        <a href="https://www.facebook.com/senaisp.sjcampos/" target="_blank"><img src="./assets/img/icons/facebok.svg" alt="Facebook do SENAI"></a>
+                    </address>
+                </div>
+            </div>
         </div>
-        
-        <div class="footer-section contact">
-            <h3>Contato</h3>
-            <ul>
-                <li>📍 Av. Senador Feijó, 421 - Santos/SP</li>
-                <li>📞 (13) 3226-4100</li>
-                <li>📧 contato@senaisantodumont.com.br</li>
-            </ul>
+
+        <div class="footer_direitos_reservados" id="direitos_reservados">
+                <p>© 2026 por SENAI. Todos os direitos reservados. Nenhuma parte desta revista pode ser reproduzida ou transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou quaisquer sistemas de armazenamento e recuperação de informação, sem permissão por escrito da instituição.</p>
         </div>
-    </div>
-    <div class="footer-bottom">
-        &copy; 2026 SENAI Santos Dumont | MVP Editorial Digital
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
