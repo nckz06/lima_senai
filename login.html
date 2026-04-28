@@ -1,163 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Inova Senai</title>
 </head>
-
 <body>
-  <header>
-
-
-
-  </header>
-  <main>
-    <h3>Login</h3>
-    <div class="login">
-
-      <small>
-        Entre com sua conta Email
-      </small>
-
-      <br><br>
-      <div class="imgUser">
-        <img src="./assets/img/profile-picture.png" width="100px" height="100px" alt="">
-      </div>
-      <br><br>
-      
-
-
-      <form method="GET">
-        <label for="email">E-mail</label> <!--Aqui adiciona uma label pra mostrar uma mensagem email-->
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
-          required><!--Aqui você esta digitando o input a entrada de dados-->
-
-        <br><br>
-
-        <label for="senha">Senha</label> <!--Aqui é um texto de campo de entrada-->
-        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
-
-
-        <br><br>
-
-        <button type="submit">Entrar</button> <!--botão enviar formulario-->
-
-
-        <button type="submit">Cadastrar</button>
-
-
-      </form>
-    </div>
-
-    <div class="cadastrar">
-      <h3>Cadastrar</h3>
-      <small>
-        Cadastre sua conta no SENAI
-      </small>
-      <br><br>
-      <img src="./assets/img/profile-picture.png" width="100px" height="100px" alt="">
-      
-      
-      <form method="POST" id="cd">
-        <br><br>
-         <label for="nome">Nome</label>
-        <input type="text" id="nomeCadastro" name="nomeCadastro" placeholder="Digite seu nome" required>
-        <br><br>
-        <label for="email">E-mail</label>
-        <input type="email" id="emailCadastro" name="emailCadastro" placeholder="Digite seu e-mail" required>
-        <br><br>
-        <label for="senha">Senha</label>
-        <input type="password" id="senhaCadastro" name="senhaCadastro" placeholder="Digite sua senha" required>
-        <br><br>
-        <label for="cpf">CPF</label> 
-        <input type="text" id="cpfCadastro" name="cpfCadastro" placeholder="___.___.___-__" required>
-        <br><br>
-        <label for="cpf">Telefone</label> 
-        <input type="text" id="telefoneCadastro" name="numeroCadastro" placeholder="Digite o telefone" required>
-
-        <br><br>
-        <button type="submit">Cadastrar</button>
-        <br><br>
-
-
-      </form>
-
-
-
-
-    </div>
-
-    <div class="imgSenai">
-      <img
-        src="https://cronos-media.sesisenaisp.org.br/api/media/1-0/files?img=img_1_230712_117c0cd6-9214-479d-a5a1-0f059b034bf3_o.jpeg&tipo=g"
-        width="400px" height="400px" alt="ImagemSenai">
-
-    </div>
-
-    <div class="descricao">
-
-      <h2>SENAI São José Campos</h2>
-
-      <p>O SENAI São José dos Campos (SJC) é uma instituição de ensino profissionalizante que oferece uma variedade de
-        cursos técnicos e superiores. A unidade é parte do maior complexo de educação profissional da América Latina e
-        atende a diversas áreas industriais, como aeroespacial, automotivo e tecnologia da informação. Recentemente, a
-        Prefeitura de São José dos Campos anunciou a doação de uma nova área para a expansão do SENAI, que incluirá um
-        novo complexo educacional com 15.500 m² de área construída, com um investimento de aproximadamente R$ 108,5
-        milhões. O SENAI também oferece cursos gratuitos, visando a formação de profissionais qualificados para o
-        mercado de trabalho. Para mais informações sobre os cursos e inscrições, você pode visitar o site oficial do
-        SENAI.</p>
-
-    </div>
-  </main>
-  <footer>
-   <!-- Teste de Footer -->
-        <div class="footer_content" id="conteudo_footer">
-            <!-- Logo -->
-            <div class="logo" id="footer_logo">
-                <a href="https://www.sp.senai.br/unidade/saojosedoscampos/" target="_blank">
-                        <img src="./assets/img/logo_senai_nova.png" alt="Voltar ao Começo">
-                </a>
+    <header>
+        <div>
+            <a href="./index.html">
+                <img class="logo" src="./assets/img/logo_senai_branca.png" alt="logo do SENAI" title="logo do SENAI">
+            </a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="./index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="./bloco_1.html">Bloco 1</a>
+                </li>
+                <li>
+                    <a href="./bloco_2.html">Bloco 2 - A</a>
+                </li>
+                <li>
+                    <a href="./bloco_3.html">Bloco 2 - B</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button>
+                <a class="btn btn-cadastro" id="cadastro" href="./login.html">Cadastrar</a>
+            </button>
+            <button>
+                <a class="btn btn-login" id="login" href="./login.html">Entrar</a>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h3>Login</h3>
+        <div class="login">
+            <small>Entre com sua conta Email</small>
+            <br><br>
+            <div class="imgUser">
+                <img src="./assets/img/profile-picture.png" width="100px" height="100px" alt="">
             </div>
-            <!-- EXplicação -->
-            <div class="footer_explicacao" id="explicacao">
-                <div class="footer_explicacao_area" id="oq_e_revista">
+            <br><br>
+            <form method="GET">
+                <label for="email">E-mail</label> <!--Aqui adiciona uma label pra mostrar uma mensagem email-->
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><!--Aqui você esta digitando o input a entrada de dados-->
+                <br><br>
+                <label for="senha">Senha</label> <!--Aqui é um texto de campo de entrada-->
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <br><br>
+                <button type="submit">Entrar</button> <!--botão enviar formulario-->
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div class="cadastrar">
+            <h3>Cadastrar</h3>
+            <small>Cadastre sua conta no SENAI</small>
+            <br><br>
+            <img src="./assets/img/profile-picture.png" width="100px" height="100px" alt="">
+            <form method="POST" id="cd">
+                <br><br>
+                <label for="nome">Nome</label>
+                <input type="text" id="nomeCadastro" name="nomeCadastro" placeholder="Digite seu nome" required>
+                <br><br>
+                <label for="email">E-mail</label>
+                <input type="email" id="emailCadastro" name="emailCadastro" placeholder="Digite seu e-mail" required>
+                <br><br>
+                <label for="senha">Senha</label>
+                <input type="password" id="senhaCadastro" name="senhaCadastro" placeholder="Digite sua senha" required>
+                <br><br>
+                <label for="cpf">CPF</label> 
+                <input type="text" id="cpfCadastro" name="cpfCadastro" placeholder="___.___.___-__" required>
+                <br><br>
+                <label for="cpf">Telefone</label> 
+                <input type="text" id="telefoneCadastro" name="numeroCadastro" placeholder="Digite o telefone" required>
+                <br><br>
+                <button type="submit">Cadastrar</button>
+                <br><br>
+            </form>
+          </div>
+          <figure class="imgSenai">
+            <img src="https://cronos-media.sesisenaisp.org.br/api/media/1-0/files?img=img_1_230712_117c0cd6-9214-479d-a5a1-0f059b034bf3_o.jpeg&tipo=g" width="400px" height="400px" alt="ImagemSenai">
+          </figure>
+          <div class="descricao">
+              <h2>SENAI São José Campos</h2>
+              <p>O SENAI São José dos Campos (SJC) é uma instituição de ensino profissionalizante que oferece uma variedade de cursos técnicos e superiores. A unidade é parte do maior complexo de educação profissional da América Latina e atende a diversas áreas industriais, como aeroespacial, automotivo e tecnologia da informação. Recentemente, a Prefeitura de São José dos Campos anunciou a doação de uma nova área para a expansão do SENAI, que incluirá um novo complexo educacional com 15.500 m² de área construída, com um investimento de aproximadamente R$ 108,5 milhões. O SENAI também oferece cursos gratuitos, visando a formação de profissionais qualificados para o mercado de trabalho. Para mais informações sobre os cursos e inscrições, você pode visitar o site oficial do SENAI.</p>
+          </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.sp.senai.br/unidade/saojosedoscampos/" target="_blank">
+                <img class="footer-logo" src="./assets/img/logo_senai_nova.png" alt="Voltar ao Começo">
+            </a>
+            <div class="footer-explicacao">
+                <div class="footer-explicacao sobre-area">
                     <h3>O que é esta Revista?</h3>
-                <p>Esta revista é um projeto para as aulas de
-                    <dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>, da turma do curso de <dfn><abbr title="Desenvolvimento de Sistemas">Dev</abbr></dfn> da General Motors. Foi criada para servir como uma <i>Revista Digital</i> do <i>SENAI #302 - Santos Dumont</i>, com o pretexto de informar os leitores sobre notícias da unidade, com tópicos como Notícias da Semana, Notícias Destaque entre outros.
-                </p>
-                </div>
-                <div class="footer_explicacao_area" id="lorem">
-                    <h3>
-                    Lorem ipsum?
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolore ut consectetur expedita ex nulla ab architecto tempore nihil, quas sapiente officia alias ducimus nostrum maxime amet incidunt eum? Aperiam?</p>
+                    <p>Esta revista é um projeto para as aulas de
+                        <dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>, da turma do curso de <dfn><abbr title="Desenvolvimento de Sistemas">Dev</abbr></dfn> da General Motors. Foi criada para servir como uma <i>Revista Digital</i> do <i>SENAI #302 - Santos Dumont</i>, com o pretexto de informar os leitores sobre notícias da unidade, com tópicos como Notícias da Semana, Notícias Destaque entre outros.
+                    </p>
                 </div>
             </div>
-            <!-- Quem Somos?? -->
-            <div class="footer_sobre_nos" id="sobre_nos">
-                <div class="footer_sobre_nos_area" id="quem_somos">
+            <div class="footer-about_us">
+                <div class="footer-about_us sobre-nos">
                     <h3>Quem somos nós?</h3>
-                    <p>Somos um grupo de desenvolvedores de sistemas da <dfn><abbr title="General Motors">GM</abbr></dfn>. Dentre nossas matérias, temos desenvolvimento Front-End, que é a contrução de sites completos. No momento, estamos passando pelas matérias "<dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>" e "Estilização de Páginas".</p> 
+                    <p>Somos um grupo de desenvolvedores de sistemas da <dfn><abbr title="General Motors">GM</abbr></dfn>. Dentre nossas matérias, temos desenvolvimento Front-End, que é a contrução de sites completos. No momento, estamos passando pelas matérias "<dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>" e "Estilização de Páginas".</p>
+                    <a href="./about.html" class="btn btn-more">Saiba Mais Sobre Nós</a>
                 </div>              
-                <div class="footer_sobre_nos_area" id="contatos">
-                    <h3>Contatos</h3></a>
+                <div class="footer-about_us contato">
                     <address>
                         <a href="https://www.instagram.com/senaisjc/" target="_blank"><img id="img_insta" src="./assets/img/icons/instagram.svg" alt="Rede Social Principal do SENAI"></a>
                         <a href="https://www.linkedin.com/company/senai-nacional/?originalSubdomain=br" target="_blank"><img id="img_linkedin" src="./assets/img/icons/linkedin.svg" alt="Linkedin do SENAI"></a>
                         <a href="https://www.facebook.com/senaisp.sjcampos/" target="_blank"><img src="./assets/img/icons/facebok.svg" alt="Facebook do SENAI"></a>
                     </address>
+                    <p>Em caso de dúvidas, entre em contato com a equipe e deixe seu feedback para nós.</p>
+                    <a href="./contatos.html" class="btn">Clique Aqui!</a>
                 </div>
             </div>
         </div>
-
-        <div class="footer_direitos_reservados" id="direitos_reservados">
-                <p>© 2026 por SENAI. Todos os direitos reservados. Nenhuma parte desta revista pode ser reproduzida ou transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou quaisquer sistemas de armazenamento e recuperação de informação, sem permissão por escrito da instituição.</p>
+        <div class="direitos-reservados">
+            <p>© 2026 por SENAI. Todos os direitos reservados. Nenhuma parte desta revista pode ser reproduzida ou transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou quaisquer sistemas de armazenamento e recuperação de informação, sem permissão por escrito da instituição.</p>
         </div>
     </footer>
 </body>
-
 </html>

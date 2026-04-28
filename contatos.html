@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <!--Cabeçalho-->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <meta name="description"
-        content="Contatos da equipe de desenvolvimento da revista 'Inova SENAI', juntamente de um formulário de resposta para melhorias." />
-    <title>Contatos e Melhorias</title>
-    <link rel="icon" type="image/png" href="" sizes="32x32">
-    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-
+    <meta name="description" content="Contatos da equipe de desenvolvimento da revista 'Inova SENAI', juntamente de um formulário de resposta para melhorias." />
+    <title>Contato | Inova Senai</title>
 </head>
-
 <body>
+    <header>
+        <div>
+            <a href="./index.html">
+                <img class="logo" src="./assets/img/logo_senai_branca.png" alt="logo do SENAI" title="logo do SENAI">
+            </a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="./index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="./bloco_1.html">Bloco 1</a>
+                </li>
+                <li>
+                    <a href="./bloco_2.html">Bloco 2 - A</a>
+                </li>
+                <li>
+                    <a href="./bloco_3.html">Bloco 2 - B</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button>
+                <a class="btn btn-cadastro" id="cadastro" href="./login.html">Cadastrar</a>
+            </button>
+            <button>
+                <a class="btn btn-login" id="login" href="./login.html">Entrar</a>
+            </button>
+        </div>
+    </header>
     <main>
-
-        <section class="melhorias_recentes">
-            <div class="conteudo_melhorias">
-                <h1>Melhorias Recentes</h1>
+        <section class="melhorias">
+            <div class="melhorias-content">
+                <h2>Melhorias Recentes</h2>
                 <p>Última melhoria: Adicionamos ao site um menu de navegação, facilitando aos usuários a mudança de páginas!</p>
                 <p>Caso tenha alguma sugestão de melhorias, nos envie um e-mail ou responda o formulário.</p>
             </div>
         </section>
-
-        <section class="entre_em_contato">
-
-            <div class="contato_content">
-                <div class="legenda_contato">
-                <h1>Entre em Contato!</h1>
-                <p>Nos mande um e-mail, ligue para nosso número de contato, ou preencha o formulário para que sua mensagem seja ouvida.</p>
-
-                <address class="contatos_equipe">
-                    <a href="mailto:email@senai.br" title="E-mail oficial para contato">email@senai.br</a>
-                    <br>
-                    <a href="tel:+5500000000000" title="Telefone oficial para contato">(11) 12345-6789</a>
-                </address>
+        <section class="contato">
+            <div class="contato-content">
+                <div class="contato-legenda">
+                    <h2>Entre em Contato!</h2>
+                    <p>Nos mande um e-mail, ligue para nosso número de contato, ou preencha o formulário para que sua mensagem seja ouvida.</p>
+                    <address class="contato-equipe">
+                        <a href="mailto:email@senai.br" title="E-mail oficial para contato">email@senai.br</a>
+                        <br>
+                        <a href="tel:+5500000000000" title="Telefone oficial para contato">(11) 12345-6789</a>
+                    </address>
                 </div>
-
-                <div class="legenda_explicacao">
-                    <div class="suporte_ao_cliente">
+                <div class="sobre-contato">
+                    <div class="suporte">
                         <h3>Por que essa página existe?</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ratione asperiores eaque expedita, error dignissimos, quod non dicta molestias quisquam ut corrupti iusto velit tempora fuga assumenda dolorem nesciunt autem.</p>
                     </div>
 
-                    <div class="feedback_e_sugestoes">
+                    <div class="sugestoes">
                         <h3>Feedback e Sugestões</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque animi sequi, ut iste fuga similique inventore, magni cum quo ab in veniam minima, expedita non molestias eos maiores. Iusto.</p>
-                    </div>
-                    
-                    <div class="retirada_de_conteudo">
-                        <h3>Quer que removamos algo?</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur vitae reiciendis laudantium? Tenetur, unde ipsa quaerat, laboriosam nam corrupti illo explicabo soluta dignissimos nihil eos ducimus! Officia, voluptatum id.</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="form_feedback">
+        <section class="feedback">
             <form action="./contatos.html" method="POST">
 
-                <h1>Fale Conosco!</h1>
+                <h2>Fale Conosco!</h2>
 
                 <!-- Nome do Usuário -->
                 <fieldset>
@@ -103,52 +116,39 @@
             </form>
         </section>
     </main>
-
     <footer>
-         <!-- Teste de Footer -->
-        <div class="footer_content" id="conteudo_footer">
-            <!-- Logo -->
-            <div class="logo" id="footer_logo">
-                <a href="https://www.sp.senai.br/unidade/saojosedoscampos/" target="_blank">
-                        <img src="./assets/img/logo_senai_nova.png" alt="Voltar ao Começo">
-                </a>
-            </div>
-            <!-- EXplicação -->
-            <div class="footer_explicacao" id="explicacao">
-                <div class="footer_explicacao_area" id="oq_e_revista">
+        <div class="footer-content">
+            <a href="https://www.sp.senai.br/unidade/saojosedoscampos/" target="_blank">
+                <img class="footer-logo" src="./assets/img/logo_senai_nova.png" alt="Voltar ao Começo">
+            </a>
+            <div class="footer-explicacao">
+                <div class="footer-explicacao sobre-area">
                     <h3>O que é esta Revista?</h3>
-                <p>Esta revista é um projeto para as aulas de
-                    <dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>, da turma do curso de <dfn><abbr title="Desenvolvimento de Sistemas">Dev</abbr></dfn> da General Motors. Foi criada para servir como uma <i>Revista Digital</i> do <i>SENAI #302 - Santos Dumont</i>, com o pretexto de informar os leitores sobre notícias da unidade, com tópicos como Notícias da Semana, Notícias Destaque entre outros.
-                </p>
-                </div>
-                <div class="footer_explicacao_area" id="lorem">
-                    <h3>
-                    Lorem ipsum?
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolore ut consectetur expedita ex nulla ab architecto tempore nihil, quas sapiente officia alias ducimus nostrum maxime amet incidunt eum? Aperiam?</p>
+                    <p>Esta revista é um projeto para as aulas de
+                        <dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>, da turma do curso de <dfn><abbr title="Desenvolvimento de Sistemas">Dev</abbr></dfn> da General Motors. Foi criada para servir como uma <i>Revista Digital</i> do <i>SENAI #302 - Santos Dumont</i>, com o pretexto de informar os leitores sobre notícias da unidade, com tópicos como Notícias da Semana, Notícias Destaque entre outros.
+                    </p>
                 </div>
             </div>
-            <!-- Quem Somos?? -->
-            <div class="footer_sobre_nos" id="sobre_nos">
-                <div class="footer_sobre_nos_area" id="quem_somos">
+            <div class="footer-about_us">
+                <div class="footer-about_us sobre-nos">
                     <h3>Quem somos nós?</h3>
-                    <p>Somos um grupo de desenvolvedores de sistemas da <dfn><abbr title="General Motors">GM</abbr></dfn>. Dentre nossas matérias, temos desenvolvimento Front-End, que é a contrução de sites completos. No momento, estamos passando pelas matérias "<dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>" e "Estilização de Páginas".</p> 
+                    <p>Somos um grupo de desenvolvedores de sistemas da <dfn><abbr title="General Motors">GM</abbr></dfn>. Dentre nossas matérias, temos desenvolvimento Front-End, que é a contrução de sites completos. No momento, estamos passando pelas matérias "<dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>" e "Estilização de Páginas".</p>
+                    <a href="./about.html" class="btn btn-more">Saiba Mais Sobre Nós</a>
                 </div>              
-                <div class="footer_sobre_nos_area" id="contatos">
-                    <h3>Contatos</h3></a>
+                <div class="footer-about_us contato">
                     <address>
                         <a href="https://www.instagram.com/senaisjc/" target="_blank"><img id="img_insta" src="./assets/img/icons/instagram.svg" alt="Rede Social Principal do SENAI"></a>
                         <a href="https://www.linkedin.com/company/senai-nacional/?originalSubdomain=br" target="_blank"><img id="img_linkedin" src="./assets/img/icons/linkedin.svg" alt="Linkedin do SENAI"></a>
                         <a href="https://www.facebook.com/senaisp.sjcampos/" target="_blank"><img src="./assets/img/icons/facebok.svg" alt="Facebook do SENAI"></a>
                     </address>
+                    <p>Em caso de dúvidas, entre em contato com a equipe e deixe seu feedback para nós.</p>
+                    <a href="./contatos.html" class="btn">Clique Aqui!</a>
                 </div>
             </div>
         </div>
-
-        <div class="footer_direitos_reservados" id="direitos_reservados">
-                <p>© 2026 por SENAI. Todos os direitos reservados. Nenhuma parte desta revista pode ser reproduzida ou transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou quaisquer sistemas de armazenamento e recuperação de informação, sem permissão por escrito da instituição.</p>
+        <div class="direitos-reservados">
+            <p>© 2026 por SENAI. Todos os direitos reservados. Nenhuma parte desta revista pode ser reproduzida ou transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou quaisquer sistemas de armazenamento e recuperação de informação, sem permissão por escrito da instituição.</p>
         </div>
     </footer>
 </body>
-
 </html>
