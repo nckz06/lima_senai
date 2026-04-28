@@ -2,66 +2,108 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição otimizada para o Google aparecer nos resultados de busca.">
+    <!-- <link rel="stylesheet" href="./assets/css/header.css"> -->
     <title>Título do Artigo</title>
+
 </head>
 <body>
 
     <article>
         <!-- Cabeçalho do Artigo -->
-        <header>
-            <h1>Título Principal do Artigo</h1>
-            <p><strong>Subtítulo ou resumo que explica brevemente o objetivo deste texto para o leitor.</strong></p>
-            
-            <p>
-                Publicado por: Nome do Autor <br>
-                Data: 27 de Outubro de 2023
-            </p>
-        </header>
+       <header>
+        <div>
+            <a href="./index.html">
+                <img class="logo" src="./assets/img/logo_senai_branca.png" alt="logo do SENAI" title="logo do SENAI">
+            </a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="./index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="">Bloco 1</a>
+                </li>
+                <li>
+                    <a href="">Bloco 2 - A</a>
+                </li>
+                <li>
+                    <a href="">Bloco 2 - B</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button class="btn" id="cadastro">Cadastrar</button>
+            <button class="btn" id="login">Entrar</button>
+        </div>
+    </header>
 
-        <hr> 
-        
         <figure>
-            <img src="https://via.placeholder.com/600x300" alt="Descrição da imagem para acessibilidade">
-            <figcaption>Legenda da imagem: descrição do que está acontecendo na foto.</figcaption>
+            <img src="https://via.placeholder.com/800x400" alt="Descrição detalhada da imagem para quem usa leitor de tela">
+            <figcaption>Legenda explicativa que complementa a imagem acima.</figcaption>
         </figure>
 
-        <!-- Corpo do Texto -->
-        <section>
-            <h2>Introdução</h2>
-            <p>Este é o primeiro parágrafo. Em HTML puro, os parágrafos servem para dar espaçamento automático entre blocos de texto.</p>
-            
-            <h2>Desenvolvimento do Tema</h2>
-            <p>Aqui você pode aprofundar o assunto. É recomendável usar subtítulos (H2) para organizar as ideias principais.</p>
-            
-            <blockquote>
-                "Isso é uma citação em destaque. Geralmente os navegadores aplicam um recuo lateral automático nesta tag."
-            </blockquote>
-
-            <p>Você também pode usar listas para facilitar a leitura:</p>
+        <!-- Índice / Table of Contents (Ótimo para SEO e UX) -->
+        <nav class="toc">
+            <h3>Neste artigo:</h3>
             <ul>
-                <li>Ponto importante número um;</li>
-                <li>Ponto importante número dois;</li>
-                <li>Conclusão do raciocínio.</li>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                <li><a href="#subtopico">Subtópico Importante</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
             </ul>
-        </section>
+        </nav>
 
         <hr>
 
-        <!-- Rodapé do Artigo -->
-        
-    </article>
+        <!-- Corpo do Texto -->
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+        </section>
 
-    <aside>
-    <h3>Leia também:</h3>
-    <ul>
-        <li><a href="#">Como aprender CSS do zero</a></li>
-        <li><a href="#">Guia definitivo de JavaScript</a></li>
-    </ul>
-    </aside>
+        <section id="desenvolvimento">
+            <h2>Desenvolvimento do Tema</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <h3>Subtópico Importante</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur <code>&lt;adipiscing elit&gt;</code>, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
 
-    <footer>
-            <p>Tags: #Tecnologia #Educação #WebDesign</p>
+            <blockquote id = "subtopico">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                <cite>— Especialista {nome}</cite>
+            </blockquote>
+
+        </section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+        </section>
+        <!-- Quem Somos?? -->
+            <div class="footer_sobre_nos" id="sobre_nos">
+                <div class="footer_sobre_nos_area" id="quem_somos">
+                    <h3>Quem somos nós?</h3>
+                    <p>Somos um grupo de desenvolvedores de sistemas da <dfn><abbr title="General Motors">GM</abbr></dfn>. Dentre nossas matérias, temos desenvolvimento Front-End, que é a contrução de sites completos. No momento, estamos passando pelas matérias "<dfn><abbr title="Linguagens de Marcação">LIMA</abbr></dfn>" e "Estilização de Páginas".</p> 
+                </div>              
+                <div class="footer_sobre_nos_area" id="contatos">
+                    <h3>Contatos</h3></a>
+                    <address>
+                        <a href="https://www.instagram.com/senaisjc/" target="_blank"><img id="img_insta" src="./assets/img/icons/instagram.svg" alt="Rede Social Principal do SENAI"></a>
+                        <a href="https://www.linkedin.com/company/senai-nacional/?originalSubdomain=br" target="_blank"><img id="img_linkedin" src="./assets/img/icons/linkedin.svg" alt="Linkedin do SENAI"></a>
+                        <a href="https://www.facebook.com/senaisp.sjcampos/" target="_blank"><img src="./assets/img/icons/facebok.svg" alt="Facebook do SENAI"></a>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_direitos_reservados" id="direitos_reservados">
+                <p>© 2026 por SENAI. Todos os direitos reservados. Nenhuma parte desta revista pode ser reproduzida ou transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou quaisquer sistemas de armazenamento e recuperação de informação, sem permissão por escrito da instituição.</p>
+        </div>
     </footer>
 
+    
 </body>
 </html>
